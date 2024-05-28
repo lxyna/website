@@ -4,7 +4,7 @@ const Extracurriculars = () => {
     return (
         <div className="extracurriculars">
             <div className="column-container">
-                <h1 className="title">Extracurriculars</h1>
+                <div className="title">Extracurriculars</div>
                 <div className="extracurriculars-info">
                     <div className="title-with-side-text">
                         <div style={{fontWeight: 'bold', fontSize: '18px'}}>Cybersecurity@UCR</div>

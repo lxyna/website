@@ -4,7 +4,7 @@ const Education = () => {
     return (
         <div className="education">
             <div className="column-container scroll">
-                <h1 className="title">Education</h1>
+                <div className="title">Education</div>
                 <div className="school"> 
                     <img className="logo" src="/ucr.jpg" alt="uni"></img>
                     <div className="info-with-img">
@@ -18,7 +18,7 @@ const Education = () => {
                         <div>Currently Enrolled In: Principles of Web Development, Systems Analysis and Design, Business Data Communications</div>
                     </div>
                 </div>
-                <h1 className="title">Skills</h1>
+                <div className="title">Skills</div>
                 <div className="info">
                     <div className="group-prog-lang-imgs">
                         <div className="group-prog-lang-column">

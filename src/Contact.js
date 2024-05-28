@@ -4,7 +4,7 @@ const Contact = () => {
     return (
         <div className="contact">
             <div className="column-container">
-                <h1 className="title">Contact</h1>
+                <div className="title">Contact</div>
                 <div className="contact-info">
                     <div style={{textAlign: 'center'}}>Thanks for visiting my website! I hope you enjoyed looking around and getting to know more about me. 😊 If you would like to talk, feel free to connect with me on LinkedIn or send an email!</div>
                     <div className="button-list2">

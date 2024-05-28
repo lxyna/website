@@ -4,7 +4,7 @@ const Experience = () => {
     return (
         <div className="experience">
             <div className="column-container scroll">
-                <h1 className="title">Experience</h1>
+                <div className="title">Experience</div>
                 <div className="experience-info">
                     <div className="title-with-side-text">
                         <div style={{fontWeight: 'bold', fontSize: '18px'}}>Red Block Green Block</div>

@@ -1,36 +1,34 @@
 // code credit: https://glenthemes.tumblr.com/post/189577220509/music-player-07-by-glenthemes-a-music-player-with
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import './MusicPlayer.css';
 
 const MusicPlayer = () => {
-  useEffect(() => {
-    
+  const [isPlaying, setIsPlaying] = React.useState(false);
+
+  const togglePlaying = () => {
     const audio = document.getElementById('audio');
-    const playButton = document.querySelector('.playy');
-    const pauseButton = document.querySelector('.pausee');
-
-    const playMusic = () => {
-      audio.play();
-      playButton.style.display = 'none';
-      pauseButton.style.display = 'inline';
-    };
-
-    const pauseMusic = () => {
+    if (isPlaying) {
       audio.pause();
-      playButton.style.display = 'inline';
-      pauseButton.style.display = 'none';
-    };
+    } else {
+      audio.play();
+    }
+    setIsPlaying(!isPlaying);
+  }
 
-    playButton.addEventListener('click', playMusic);
-    pauseButton.addEventListener('click', pauseMusic);
+  const progressUpdate = () => {
+    const audio = document.getElementById('audio');
+    const progress = document.querySelector('.oliveoil');
 
-    
-    return () => {
-      playButton.removeEventListener('click', playMusic);
-      pauseButton.removeEventListener('click', pauseMusic);
-    };
-  }, []);
+    const p = parseInt(((audio.currentTime / audio.duration) * 100), 10);
+
+    if (p === 100) {
+      progress.style.backgroundImage = "none";
+      setIsPlaying(false);
+    } else {
+      progress.style.backgroundImage = `conic-gradient(var(--Progress-Fill) ${p}%, var(--Progress-Empty) ${p}%)`;
+    }
+  }
 
   return (
     <div id="glenplayer07">
@@ -40,10 +38,11 @@ const MusicPlayer = () => {
             <div className="oliveoil"></div>
           </div>
           <div className="crust">
-            <div className="cherry">
+            <div onClick={togglePlaying} className="cherry">
               <div className="music-controls">
-                <i className="material-icons playy">play_arrow</i>
-                <i className="material-icons pausee">pause</i>
+                {isPlaying
+                  ? <i className="material-icons">pause</i>
+                  : <i className="material-icons">play_arrow</i>}
               </div>
             </div>
           </div>
@@ -53,7 +52,7 @@ const MusicPlayer = () => {
           <div className="artist-name">j scott rakozy</div>
         </div>
       </div>
-      <audio id="audio" src="https://dl.dropbox.com/scl/fi/hxgv0izlf5zzbmj1mm8ck/06.-Ravenclaw-Common-Room.mp3?rlkey=bux1mgx6un15g51fle1e9hqod&st=5bft2lpx&dl=0" type="audio/mp3"></audio>
+      <audio onTimeUpdate={progressUpdate} id="audio" src="https://dl.dropbox.com/scl/fi/hxgv0izlf5zzbmj1mm8ck/06.-Ravenclaw-Common-Room.mp3?rlkey=bux1mgx6un15g51fle1e9hqod&st=5bft2lpx&dl=0" type="audio/mp3"></audio>
     </div>
   );
 };

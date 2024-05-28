@@ -5,11 +5,9 @@ const About = () => {
         <div className="about">
             <div className="column-container scroll">
                 <img className="pixel-up" src="/pixel.gif" alt="cute"></img>
-                <h1 className="title">Background</h1>
+                <div className="title">Background</div>
                 <div>Graduating from high school, my biggest dilemma was figuring out what I wanted to major in. The reason why I chose Computer Science with Business Applications was because of my everlasting love for gaming and additional interest in business. Coming into college without any programming experience, it proved to be a stressful, but fun experience for me. Throughout these four years, I feel that I have learned a lot and I believe my college experience would not have been the way it was if it weren't for my friends and their support.</div>
-                <br/>
-                <div>My career goals after graduation are to either continue school and pursue a Master's degree in Computer Science or go into industry and work. Jobs I would ideally like to work as are software developer or business analyst. </div>
-                <br/>
+                <p>My career goals after graduation are to either continue school and pursue a Master's degree in Computer Science or go into industry and work. Jobs I would ideally like to work as are software developer or business analyst. </p>
                 <div>When I'm not studying, I enjoy gaming, listening to music, spending time with family and friends, going to amusement parks, or finding excuses to spend money. I also love collecting acrylic charms and enamel pins of my favorite interests. Games I am currently playing are Genshin Impact and Hogwarts Legacy. </div>
                 <img className="pixel-down" src="/pixel.gif" alt="cute"></img>
             <div className="button-list">

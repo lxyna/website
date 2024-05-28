@@ -33,6 +33,9 @@
 
 .title {
   font-family: 'Karla';
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .image {
@@ -140,6 +143,7 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
+  margin-bottom: 15px;
 }
 
 .info {
