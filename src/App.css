@@ -1,38 +1,304 @@
-.App {
-  text-align: center;
+.navbar {
+  margin-bottom: 100px;
+  height: 50px;
+  background-color: #8D93AB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.button {
+  background-color: #D6E0F0;
+  color: black;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 5px 15px;
+  font-family: Outfit;
+  text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.button1 {
+  border: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar-left {
+  display: flex;
+  gap: 50px;
+}
+
+.navbar-left > *:hover {
+  background-color: #c0c9d8;
+  cursor: pointer;
+}
+
+.title {
+  font-family: 'Karla';
+}
+
+.image {
+  max-width: 150px;
+  border-radius: 150px;
+  border: 4px solid white;
+  z-index: 5;
+}
+
+.emoji {
+  margin-top: 115px;
+  margin-left: 100px;
+  max-width: 45px;
+  border-radius: 50%;
+  z-index: 5;
+  position: absolute;
+}
+
+.zoom {
+  padding: 10px;
+  transition: transform .2s;
+}
+
+.zoom:hover {
+  transform: scale(1.2);
+}
+
+.zoom-button {
+  transition: transform .2s;
+}
+
+.zoom-button:hover {
+  transform: scale(1.1);
+}
+
+.home {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.column-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #454752;
+  max-width: 600px;
+  text-align: justify;
+  align-items: center;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #babac0;
+  border-radius: 16px;
+  border: 4px solid transparent;
+}
+
+::-webkit-scrollbar-button {
+  display: none;
+}
+
+.pixel-up {
+  top: -20px;
+  left: -20px;
+  max-width: 45px;
+  z-index: 5;
+  position: absolute;
+}
+
+.pixel-down {
+  bottom: -20px;
+  right: -20px;
+  max-width: 45px;
+  z-index: 5;
+  position: absolute;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.school {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.info-with-img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 15px;
+}
+
+.logo {
+  max-width: 60px;
+}
+
+.prog-img {
+  min-width: 75px;
+}
+
+.group-prog-lang-imgs {
+  display: flex;
+}
+
+.prog-lang-img {
+  margin-right: 20px;
+}
+
+.prog-img-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.prog-first-row {
+  display: flex;
+}
+
+.prog-second-row {
+  display: flex;
+}
+
+.group-prog-lang-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-with-side-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button-logo {
+  height: 16px;
+  margin-right: 5px;
+  align-content: center;
+}
+
+.button-logo2 {
+  width: 18px;
+  height: 18px;
+  margin-right: 5px;
+  align-content: center;
+}
+
+.ext-button {
+  background-color: #D6E0F0;
+  color: black;
+  font-weight: bold;
+  border-radius: 20px;
+  font-family: Outfit;
+  width: 100px;
+  height: 30px;
+}
+
+.button-list {
+  display: flex;
+  gap: 10px;
+}
+
+.button-list2 {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.resume-button {
+  background-color: #D6E0F0;
+  color: black;
+  font-weight: bold;
+  border-radius: 20px;
+  font-family: Outfit;
+  width: 100px;
+  height: 30px;
+  margin-top: 20px;
+}
+
+.experience-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.text-and-image {
+  display: flex;
+}
+
+.prog-img-with-text {
+  margin-left: 5px;
+  width: 25px;
+}
+
+.button-and-text {
+  color: black;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.button-list > *:hover {
+  background-color: #c0c9d8;
+  cursor: pointer;
+}
+
+.button-list2 > *:hover {
+  background-color: #c0c9d8;
+  cursor: pointer;
+}
+
+.extracurriculars {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.extracurriculars-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
