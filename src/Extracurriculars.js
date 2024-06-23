@@ -8,7 +8,7 @@ const Extracurriculars = () => {
                 <div className="extracurriculars-info">
                     <div className="title-with-side-text">
                         <div style={{fontWeight: 'bold', fontSize: '18px'}}>Cybersecurity@UCR</div>
-                        <div>April 2022 - Present</div>
+                        <div>April 2022 - June 2024</div>
                     </div>
                     <div className="title-with-side-text">
                         <div>Member</div>

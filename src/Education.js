@@ -14,8 +14,7 @@ const Education = () => {
                         </div>
                         <div>Bachelor of Science in Computer Science with Business Applications
                         </div>
-                        <p>Relevant Coursework: Data Structures and Algorithms, Operating Systems, Intro to Embedded Systems, Intro to Big Data Management, Marketing and Distribution Management, Decision Analysis and Management Science</p>
-                        <div>Currently Enrolled In: Principles of Web Development, Systems Analysis and Design, Business Data Communications</div>
+                        <p>Relevant Coursework: Data Structures and Algorithms, Operating Systems, Intro to Embedded Systems, Intro to Big Data Management, Principles of Web Development, Marketing and Distribution Management, Decision Analysis and Management Science, Intro to Financial Management</p>
                     </div>
                 </div>
                 <div className="title">Skills</div>
